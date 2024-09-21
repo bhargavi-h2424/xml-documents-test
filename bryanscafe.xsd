@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element for Bryan's Café -->
+    <xs:element name="bryansCafe">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- The menu consists of multiple menuItem elements -->
+                <xs:element name="menuItem" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Each menu item contains name, description, and price -->
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="description" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!-- Updated media element allowing gif and audio with attributes -->
+                <xs:element name="media">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- gif is now a complex type that allows the src attribute -->
+                            <xs:element name="gif">
+                                <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- audio is now a complex type that allows the src attribute -->
+                            <xs:element name="audio">
+                                <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

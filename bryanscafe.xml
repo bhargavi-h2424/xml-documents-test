@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bryansCafe.xsl"?>
+<bryansCafe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="bryansCafe.xsd">
+    <menuItem>
+        <name>Beetroot and Feta Salad</name>
+        <description>Suitable for vegetarians</description>
+        <price>15.00</price>
+    </menuItem>
+    <menuItem>
+        <name>Spinach Pie and Salad</name>
+        <description>Tasty pie with salad</description>
+        <price>20.00</price>
+    </menuItem>
+    <!-- Media elements (GIF and audio) -->
+    <media>
+        <gif src="C:\Users\miste\Downloads\OneDrive_2024-09-06\01 ICT50220 DIT B1\03 ICTWEB518\ICTWEB518 Student Resources\betroot.gif" />
+        <audio src="menu_sound.mp3" />
+    </media>
+</bryansCafe>

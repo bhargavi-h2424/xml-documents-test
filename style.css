@@ -1,0 +1,86 @@
+/* General Styling for the XML Documents */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* Light blue background color */
+    color: #333;
+    padding: 20px;
+}
+
+/* Styling for bread items in Luca's Loaves */
+lucaLoaves {
+    display: block;
+}
+
+bread {
+    display: block; /* Ensures bread items appear below each other */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 300px;
+}
+
+bread > name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+bread > description {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+bread > price {
+    color: green;
+    font-size: 1.1em;
+}
+
+/* Styling for Bryan's Café Menu */
+bryansCafe {
+    display: block;
+}
+
+menuItem {
+    display: block; /* Ensures menu items appear below each other */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    width: 300px;
+}
+
+menuItem > name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+menuItem > description {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+menuItem > price {
+    color: green;
+    font-size: 1.1em;
+}
+
+/* Styling the media elements */
+media {
+    margin-top: 20px;
+}
+
+/* Ensuring the GIF is properly displayed */
+gif {
+    display: block;
+    margin-bottom: 10px;
+    width: 300px; /* Set a width for the GIF */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Ensuring the audio element is displayed */
+audio {
+    display: block;
+    margin-top: 10px;
+}

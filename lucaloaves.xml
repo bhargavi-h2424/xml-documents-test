@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="lucaLoaves.xsl"?>
+<lucaLoaves xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="lucaLoaves.xsd">
+    <bread>
+        <name>Sourdough White</name>
+        <description>Our standard sourdough</description>
+        <price>7.00</price>
+    </bread>
+    <bread>
+        <name>Sourdough Rye</name>
+        <description>Sourdough created with 50% rye flour</description>
+        <price>8.00</price>
+    </bread>
+    <!-- Media elements (GIF and audio) -->
+    <media>
+        <gif src= "C:\Users\miste\Downloads\OneDrive_2024-09-06\01 ICT50220 DIT B1\03 ICTWEB518\ICTWEB518 Student Resources\bread.gif" />
+        <audio src= "C:\Users\miste\Downloads\OneDrive_2024-09-06\01 ICT50220 DIT B1\03 ICTWEB518\ICTWEB518 Student Resources\bread sopund.mp3"/>
+    </media>
+</lucaLoaves>

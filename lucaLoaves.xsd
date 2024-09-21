@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Root element for Luca's Loaves -->
+    <xs:element name="lucaLoaves">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- The bread element is repeated for each type of bread -->
+                <xs:element name="bread" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="description" type="xs:string"/>
+                            <xs:element name="price" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!-- Media elements for Luca's Loaves -->
+                <xs:element name="media">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- gif is now a complex type that allows the src attribute -->
+                            <xs:element name="gif">
+                                <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <!-- audio is now a complex type that allows the src attribute -->
+                            <xs:element name="audio">
+                                <xs:complexType>
+                                    <xs:attribute name="src" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
